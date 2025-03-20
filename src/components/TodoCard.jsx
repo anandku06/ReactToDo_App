@@ -1,11 +1,9 @@
 export function TodoCard(props) {
-  const { todos } = props;
+  const { todo } = props;
 
   return (
     <>
-    {todos.map((todo, todoIndex) => {
-      return(
-        <div key={todoIndex} className="card todo-item">
+     <div className="card todo-item">
         <p>{todo.input}</p>
         <div className="todo-buttons">
           <button disabled={todo.completed}>
@@ -16,8 +14,6 @@ export function TodoCard(props) {
           </button>
         </div>
       </div>
-      )
-    })}
     </>
   );
 }
