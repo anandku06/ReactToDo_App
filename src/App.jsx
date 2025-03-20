@@ -12,7 +12,9 @@ function App() {
   //   { input: "Say hi to gran gran", completed: true },
   // ];
 
-  const [todos, setTodos] = useState([]);
+  const [todos, setTodos] = useState([
+    { input: "Hello! Add your first Todo!", completed: true }
+  ]);
   const [selectedTab, setSelectedTab] = useState("All");
 
   function handleAddTodo(newTodo) {
@@ -22,7 +24,10 @@ function App() {
 
   function handleEditTodo() {}
 
-  function handleDeleteTodo() {}
+  function handleDeleteTodo(index) {
+    let newTodoList = todos.filter((val, valIndex) => valIndex !== index)
+    setTodos(newTodoList)
+  }
 
   return (
     <>
@@ -32,7 +37,7 @@ function App() {
         selectedTab={selectedTab}
         setSelectedTab={setSelectedTab}
       />
-      <TodoList todos={todos} selectedTab={selectedTab} />
+      <TodoList todos={todos} selectedTab={selectedTab} handleDeleteTodo={handleDeleteTodo} />
       <TodoInput handleAddTodo={handleAddTodo} />
     </>
   );
