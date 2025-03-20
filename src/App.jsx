@@ -4,12 +4,17 @@ import { TodoInput } from "./components/TodoInput";
 import { TodoList } from "./components/TodoList";
 
 function App() {
-  const todos = [];
+  const todos = [
+    { input: "Hello! Add your first Todo!", completed: true },
+    { input: "Get the groceries!", completed: false },
+    { input: "Learn how to web design", completed: false },
+    { input: "Say hi to gran gran", completed: true },
+  ];
   return (
     <>
-      <Header />
-      <Tabs />
-      <TodoList />
+      <Header todos={todos} />
+      <Tabs todos={todos} />
+      <TodoList todos={todos} />
       <TodoInput />
     </>
   );
