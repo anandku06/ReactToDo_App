@@ -1,5 +1,5 @@
 # ✅ Todo App with React & Fanta CSS 🎨
-[![Netlify Status](https://api.netlify.com/api/v1/badges/d91368d4-68b6-4337-b505-64ee9875233b/deploy-status)](https://app.netlify.com/sites/react-nottodo-app/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/f0e528f1-ef69-4e8e-b466-765b508d816d/deploy-status)](https://app.netlify.com/sites/react-nottodo-app/deploys)
 
 ## 🚀 Overview
 This is a simple yet cool Todo app built with **React** and styled using **Fanta CSS**! 🎉 Stay organized and keep track of your tasks in style. 
